@@ -16,6 +16,7 @@
     >
       <h1 class="text-2xl">GREEN DEN</h1>
       <svg
+        id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -41,6 +42,28 @@
       </ul>
     </nav>
 
+    <!--side navbar-->
+
+    <section
+      id="sidenavbar"
+      class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <div class="text-right text-3xl p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col items-center gap-10 text-gray-600">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="Products.html" class="hover:underline">Products</a></li>
+        <li>
+          <a href="Contact.html" class="hover:underline hover:text-black"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!--side navbar ending-->
     <section class="text-center mt-10">
       <div>
         <h1 class="text-black text-center text-3xl font-bold mb-5">
@@ -48,6 +71,7 @@
         </h1>
 
         <input
+          id="input-id"
           type="text"
           class="w-3/4 border border-black p-2 m-3"
           placeholder="search for a products..."
@@ -57,7 +81,7 @@
 
     <!-- best seller section  -->
     <section class="mt-3 text-center">
-      <div class="grid grid-cols-2 gap-5 md:grid-cols-4">
+      <div id="product-container" class="grid grid-cols-2 gap-5 md:grid-cols-4">
         <div>
           <img
             class="h-80 w-50 mt-5 p-2 inline hover:shadow-xl transform hover:-translate-y-2"
@@ -71,7 +95,7 @@
             class="h-80 w-50 mt-5 p-2 inline hover:shadow-xl transform hover:-translate-y-2"
             src="images/pexels-peterfazekas-12652586.jpg"
           />
-          <p>Rose Plant</p>
+          <p>Red plant</p>
           <p>$5</p>
         </div>
         <div>
@@ -79,7 +103,7 @@
             class="h-80 w-50 mt-5 p-2 inline hover:shadow-xl transform hover:-translate-y-2"
             src="images/flower-pot.jpg"
           />
-          <p>Rose Plant</p>
+          <p>Pink Plant</p>
           <p>$5</p>
         </div>
         <div>
@@ -87,7 +111,7 @@
             class="h-80 w-50 mt-5 p-2 inline hover:shadow-xl transform hover:-translate-y-2"
             src="images/pepper-face-plant-small-pot.jpg"
           />
-          <p>Rose Plant</p>
+          <p>yellow Plant</p>
           <p>$5</p>
         </div>
         <div>
@@ -95,7 +119,7 @@
             class="h-80 w-50 mt-5 p-2 inline hover:shadow-xl transform hover:-translate-y-2"
             src="images/calathea-plant-jug.jpg"
           />
-          <p>Rose Plant</p>
+          <p>white Plant</p>
           <p>$5</p>
         </div>
         <div>
@@ -103,7 +127,7 @@
             class="h-80 w-50 mt-5 p-2 inline hover:shadow-xl transform hover:-translate-y-2"
             src="images/calathea-plant-jug.jpg"
           />
-          <p>Rose Plant</p>
+          <p>lavendar Plant</p>
           <p>$5</p>
         </div>
         <div>
@@ -111,7 +135,7 @@
             class="h-80 w-50 mt-5 p-2 inline hover:shadow-xl transform hover:-translate-y-2"
             src="images/calathea-plant-jug.jpg"
           />
-          <p>Rose Plant</p>
+          <p>orange Plant</p>
           <p>$5</p>
         </div>
         <div>
@@ -119,7 +143,7 @@
             class="h-80 w-50 mt-5 p-2 inline hover:shadow-xl transform hover:-translate-y-2"
             src="images/calathea-plant-jug.jpg"
           />
-          <p>Rose Plant</p>
+          <p>sandal Plant</p>
           <p>$5</p>
         </div>
       </div>
@@ -133,5 +157,6 @@
       </p>
       <p>@2024 Greenday.com</p>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>

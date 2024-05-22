@@ -16,6 +16,7 @@
     >
       <h1 class="text-2xl">GREEN DEN</h1>
       <svg
+        id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -41,6 +42,28 @@
       </ul>
     </nav>
 
+    <!--side navbar-->
+
+    <section
+      id="sidenavbar"
+      class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+      style="width: 50%; height: 100vh; right: -50%"
+    >
+      <div class="text-right text-3xl p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col items-center gap-10 text-gray-600">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="Products.html" class="hover:underline">Products</a></li>
+        <li>
+          <a href="Contact.html" class="hover:underline hover:text-black"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!--side navbar ending-->
     <section class="bg-white dark:bg-gray-900">
       <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
         <h2
@@ -114,5 +137,6 @@
       </p>
       <p>@2024 Greenday.com</p>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
